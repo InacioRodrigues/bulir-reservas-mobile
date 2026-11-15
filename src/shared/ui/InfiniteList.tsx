@@ -31,10 +31,14 @@ export function InfiniteList<T extends { id: string }>({
   const { colors } = useTheme()
   const items = flattenPages(query.data)
 
-  if (query.isPending) return <LoadingState />
-  if (query.isError && items.length === 0) {
-    return <ErrorState error={query.error} onRetry={() => void query.refetch()} />
-  }
+  // O header (ex.: pesquisa) fica sempre montado: o campo não perde o foco enquanto carrega.
+  const emptyContent = query.isPending ? (
+    <LoadingState />
+  ) : query.isError ? (
+    <ErrorState error={query.error} onRetry={() => void query.refetch()} />
+  ) : (
+    empty
+  )
 
   return (
     <FlatList
@@ -43,7 +47,7 @@ export function InfiniteList<T extends { id: string }>({
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
       ListHeaderComponent={header ? <>{header}</> : undefined}
-      ListEmptyComponent={empty}
+      ListEmptyComponent={emptyContent}
       ListFooterComponent={<ListFooter loading={query.isFetchingNextPage} />}
       contentContainerStyle={styles.content}
       onEndReached={() => {

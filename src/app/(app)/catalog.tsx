@@ -1,5 +1,1 @@
-import { EmptyState } from '@/shared/ui/StateViews'
-
-export default function Placeholder() {
-  return <EmptyState title="Em construção" />
-}
+export { CatalogScreen as default } from '@/features/services/screens/CatalogScreen'

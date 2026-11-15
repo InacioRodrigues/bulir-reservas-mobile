@@ -1,4 +1,10 @@
-import { useInfiniteQuery, useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import {
+  keepPreviousData,
+  useInfiniteQuery,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from '@tanstack/react-query'
 import { nextPageParam } from '@/shared/api/infinite'
 import { queryKeys } from '@/shared/api/query-keys'
 import type { ServiceListParams } from '@/shared/contract/types'
@@ -16,6 +22,8 @@ export function useCatalog(filters: CatalogFilters) {
       servicesApi.catalog({ ...filters, page: pageParam, perPage: SERVICES_PER_PAGE }),
     initialPageParam: 1,
     getNextPageParam: nextPageParam,
+    // Ao mudar a pesquisa, mantém os resultados anteriores até chegarem os novos (sem "piscar").
+    placeholderData: keepPreviousData,
   })
 }
 
