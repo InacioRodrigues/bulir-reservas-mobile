@@ -45,6 +45,17 @@
       "typedRoutes": true,
       "reactCompiler": true
     },
-    "description": "App mobile da plataforma de reservas Bulir: clientes contratam serviços de prestadores com saldo em Kwanzas."
+    "description": "App mobile da plataforma de reservas Bulir: clientes contratam serviços de prestadores com saldo em Kwanzas.",
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "27901f51-a5d3-4f0f-b937-739b6fa4d64f"
+      }
+    },
+    "owner": "inaciorodrigues"
   }
 }
