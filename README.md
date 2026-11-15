@@ -102,7 +102,7 @@ npm start               # mostra o QR code
 | Telemóvel com **Expo Go** (mesma rede Wi-Fi) | `http://<IP-do-computador>:3000` (ex.: `http://192.168.1.20:3000`; no macOS `ipconfig getifaddr en0`) |
 | Emulador Android                             | `http://10.0.2.2:3000`                                                                                |
 | Simulador iOS / `npm run web`                | `http://localhost:3000`                                                                               |
-| API em produção                              | `https://<api-em-producao>`                                                                           |
+| API em produção                              | `https://bulir-reservas-api-15sk.onrender.com`                                                        |
 
 > Num telemóvel físico `localhost` é o próprio telemóvel, por isso é preciso o IP da máquina (e a firewall tem de permitir a porta 3000).
 > O Expo web (`npm run web`, porta 8081) já está nas origens CORS por omissão da API.
