@@ -1,0 +1,31 @@
+# Fluxo E2E Maestro (https://maestro.mobile.dev): login como cliente, contratar e cancelar.
+# Pré-requisitos: APK/dev build instalado (appId abaixo), API com o seed e `maestro test .maestro/`.
+# No Expo Go use `appId: host.exp.exponent` e abra primeiro o projeto pelo QR code.
+appId: com.inaciorodrigues.bulirreservas
+---
+- launchApp:
+    clearState: true
+- assertVisible: 'Iniciar sessão'
+- tapOn:
+    id: 'login-identifier'
+- inputText: 'ana.cliente@bulir.demo'
+- tapOn:
+    id: 'login-password'
+- inputText: 'Senha@123'
+- hideKeyboard
+- tapOn:
+    id: 'login-submit'
+- assertVisible:
+    id: 'balance-chip'
+- tapOn: 'Corte de cabelo'
+- assertVisible: 'Saldo após contratar'
+- tapOn:
+    id: 'hire-button'
+- tapOn: 'Contratar'
+- assertVisible: '.*contratado com sucesso.*'
+- assertVisible: 'Confirmada'
+- tapOn: 'Cancelar reserva'
+- tapOn:
+    text: 'Cancelar reserva'
+    index: 1
+- assertVisible: 'Reserva cancelada e valor reembolsado ao cliente.'
