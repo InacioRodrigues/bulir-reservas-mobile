@@ -1,5 +1,1 @@
-import { EmptyState } from '@/shared/ui/StateViews'
-
-export default function Placeholder() {
-  return <EmptyState title="Em construção" />
-}
+export { WalletScreen as default } from '@/features/wallet/screens/WalletScreen'

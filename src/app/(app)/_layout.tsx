@@ -43,7 +43,6 @@ export default function AppTabsLayout() {
         headerRight: () => <BalanceChip />,
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.textMuted,
-        tabBarLabelStyle: { fontSize: 12, fontWeight: '600' },
         headerTitleStyle: { fontWeight: '700' },
       }}
     >
