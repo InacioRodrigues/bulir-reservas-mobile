@@ -58,6 +58,7 @@ export default function AppTabsLayout() {
           name="services"
           options={{
             title: 'Meus serviços',
+            tabBarLabel: 'Serviços',
             tabBarIcon: tabIcon('briefcase-outline', 'briefcase'),
           }}
         />
@@ -65,6 +66,7 @@ export default function AppTabsLayout() {
           name="new-service"
           options={{
             title: 'Novo serviço',
+            tabBarLabel: 'Novo',
             tabBarIcon: tabIcon('add-circle-outline', 'add-circle'),
           }}
         />

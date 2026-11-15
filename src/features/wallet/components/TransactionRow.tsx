@@ -45,7 +45,7 @@ export function TransactionRow({ transaction }: { transaction: Transaction }) {
         />
       </View>
       <View style={styles.text}>
-        <AppText weight="medium" numberOfLines={1}>
+        <AppText weight="medium" numberOfLines={2}>
           {label}
         </AppText>
         <AppText variant="caption" tone="muted">
