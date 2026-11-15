@@ -14,7 +14,7 @@
     "android": {
       "package": "com.inaciorodrigues.bulirreservas",
       "adaptiveIcon": {
-        "backgroundColor": "#0F766E",
+        "backgroundColor": "#2DD4BF",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -32,15 +32,19 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#0F766E",
+          "backgroundColor": "#F6F8F8",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 120
+          "imageWidth": 120,
+          "dark": {
+            "backgroundColor": "#0B1220"
+          }
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "description": "App mobile da plataforma de reservas Bulir: clientes contratam serviços de prestadores com saldo em Kwanzas."
   }
 }
