@@ -12,8 +12,7 @@
       "distribution": "internal",
       "android": { "buildType": "apk" },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://bulir-reservas-api-15sk.onrender.com",
-        "EXPO_PUBLIC_DEMO_ACCOUNTS": "true"
+        "EXPO_PUBLIC_API_URL": "https://bulir-reservas-api-15sk.onrender.com"
       }
     },
     "production": {

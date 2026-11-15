@@ -23,6 +23,4 @@ const apiUrl = readApiUrl()
 export const env = {
   apiUrl,
   apiBaseUrl: `${apiUrl}/api/v1`,
-  /** Mostra atalhos para as contas de demonstração (seed) no ecrã de login. */
-  showDemoAccounts: process.env.EXPO_PUBLIC_DEMO_ACCOUNTS !== 'false',
 } as const

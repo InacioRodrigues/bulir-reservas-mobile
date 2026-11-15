@@ -21,7 +21,7 @@ com saldo em Kwanzas; prestadores publicam e gerem os seus serviços.
 
 **Autenticação**
 
-- Login com **e-mail ou NIF** no mesmo campo (a ajuda indica qual está a ser usado) + senha; atalhos para as contas de demonstração.
+- Login com **e-mail ou NIF** no mesmo campo (a ajuda indica qual está a ser usado) + senha.
 - Registo com escolha do papel (Cliente/Prestador), validação igual à da API e erros de e-mail/NIF duplicado no campo certo.
 - Sessão restaurada no arranque (splash mantido até se saber se há sessão), refresh token rotativo transparente, logout com confirmação que revoga o refresh token.
 - `429` respeita o `Retry-After`: o botão "Entrar" fica bloqueado com contagem decrescente.
