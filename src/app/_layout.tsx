@@ -7,6 +7,9 @@ import { messageForCode } from '@/shared/api/errors'
 import { onSessionExpired, restoreSession, useSessionStore } from '@/shared/session/session-store'
 import { ToastHost, toast } from '@/shared/ui/toast'
 
+// Ecrã de recurso se um ecrã rebentar durante o render.
+export { AppErrorBoundary as ErrorBoundary } from '@/app-shell/AppErrorBoundary'
+
 // O splash nativo fica visível até sabermos se há sessão guardada (sem "flash" do login).
 void SplashScreen.preventAutoHideAsync()
 
@@ -44,6 +47,7 @@ export default function RootLayout() {
       <StatusBar style="auto" />
       <Stack screenOptions={{ headerBackButtonDisplayMode: 'minimal' }}>
         <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="+not-found" />
 
         <Stack.Protected guard={status === 'anonymous'}>
           <Stack.Screen name="(auth)" options={{ headerShown: false }} />
