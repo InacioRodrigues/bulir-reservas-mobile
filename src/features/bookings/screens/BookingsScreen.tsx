@@ -56,6 +56,7 @@ export function BookingsScreen() {
       <InfiniteList
         query={query}
         testID="bookings-list"
+        responsiveColumns
         header={
           <View style={styles.header}>
             <SegmentedControl

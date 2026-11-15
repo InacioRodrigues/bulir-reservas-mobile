@@ -75,6 +75,7 @@ export function CatalogScreen() {
       <InfiniteList
         query={query}
         testID="catalog-list"
+        responsiveColumns
         header={header}
         renderItem={({ item }) => {
           const enough = !me || hasSufficientBalance(me.balance, item.price)

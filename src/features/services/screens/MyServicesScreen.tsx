@@ -37,6 +37,7 @@ export function MyServicesScreen() {
       <InfiniteList
         query={query}
         testID="my-services-list"
+        responsiveColumns
         header={
           total !== undefined && total > 0 ? (
             <AppText tone="muted">
