@@ -1,4 +1,5 @@
 // Configuração global dos testes (jest-expo + Testing Library).
+import 'react-native-gesture-handler/jestSetup'
 import { cleanup } from '@testing-library/react-native'
 
 // SecureStore em memória: os testes não têm Keychain/Keystore.
