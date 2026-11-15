@@ -1,13 +1,13 @@
 # Progresso — Desafio 3 (Mobile)
 
-| Fase                      | Estado    | Notas                                                                                                                |
-| ------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- |
-| 0. Setup                  | concluída | Expo SDK 58 + Expo Router + TS strict, ESLint (expo) + Prettier, jest-expo, `.env.example` com `EXPO_PUBLIC_API_URL` |
-| 1. Camada de API e estado | por fazer |                                                                                                                      |
-| 2. Auth                   | por fazer |                                                                                                                      |
-| 3. Prestador              | por fazer |                                                                                                                      |
-| 4. Cliente                | por fazer |                                                                                                                      |
-| 5. Histórico              | por fazer |                                                                                                                      |
-| 6. Polimento              | por fazer |                                                                                                                      |
-| 7. Testes                 | por fazer |                                                                                                                      |
-| 8. Entrega                | por fazer |                                                                                                                      |
+| Fase                      | Estado    | Notas                                                                                                                                                                                                      |
+| ------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0. Setup                  | concluída | Expo SDK 58 + Expo Router + TS strict, ESLint (expo) + Prettier, jest-expo, `.env.example` com `EXPO_PUBLIC_API_URL`                                                                                       |
+| 1. Camada de API e estado | concluída | Tipos e schemas zod da web, dinheiro exato (BigInt) e formatação Kz determinística, `ApiError` pt, axios com refresh single-flight, tokens no SecureStore, infinite queries                                |
+| 2. Auth                   | concluída | Login por e-mail ou NIF (contas demo, cooldown em 429), registo com escolha de papel, restauro de sessão com splash, `Stack.Protected`/`Tabs.Protected` por papel, logout com confirmação, saldo no header |
+| 3. Prestador              | concluída | Separadores "Serviços"/"Novo", lista infinita com pull-to-refresh, formulário único criar/editar (PATCH só com campos alterados), excluir com `Alert`                                                      |
+| 4. Cliente                | por fazer |                                                                                                                                                                                                            |
+| 5. Histórico              | por fazer |                                                                                                                                                                                                            |
+| 6. Polimento              | por fazer |                                                                                                                                                                                                            |
+| 7. Testes                 | por fazer |                                                                                                                                                                                                            |
+| 8. Entrega                | por fazer |                                                                                                                                                                                                            |
