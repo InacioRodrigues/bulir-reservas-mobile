@@ -6,6 +6,7 @@ com saldo em Kwanzas; prestadores publicam e gerem os seus serviços.
 
 - **API:** [`bulir-reservas-api`](https://github.com/InacioRodrigues/bulir-reservas-api) · **Web:** [`bulir-reservas-web`](https://github.com/InacioRodrigues/bulir-reservas-web)
 - Corre no **Expo Go** (sem Xcode/Android Studio) ou como **APK** (EAS Build).
+- **APK Android pronto a instalar** (aponta para a API em produção): https://expo.dev/artifacts/eas/kgoLzbKVg89RnEYn1ZLQXnGJ2GhVE-uglLud-Bk6dvA.apk
 
 | Login                                   | Catálogo                                      | Contratar                                               | Histórico                                       |
 | --------------------------------------- | --------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------- |
